@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+    sans: ['Poppins', 'sans-serif']
+},
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.8s ease-in forwards'
+                    }
+                }
+            }
+        
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-50 text-gray-900 font-sans">
+
+   <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200/50">
+    
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="#home"
+           class="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            URT
+        </a>
+
+        <!-- Nav Links -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8 text-xs sm:text-sm md:text-base">
+            <a href="#home" class="font-medium text-blue-600 hover:text-blue-700">Home</a>
+            <a href="#about" class="font-medium text-gray-700 hover:text-gray-900">About</a>
+            <a href="#projects" class="font-medium text-gray-700 hover:text-gray-900">Projects</a>
+            <a href="#publications" class="font-medium text-gray-700 hover:text-gray-900">Publications</a>
+            <a href="#contact" class="font-medium text-gray-700 hover:text-gray-900">Contact</a>
+        </div>
+
+    </div>
+
+</nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="min-h-[85vh] flex items-center">
+        <div class="max-w-6xl mx-auto w-full px-6 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <!-- TEXT -->
+                <div class="animate-fadeIn">
+                    <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span class="text-Black-500">Umme Rubaiya Tanha</span>
+                    </h1>
+
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                         Web Developer | UI/UX Designer | CSE Undergrad Student
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                            Get in Touch
+                        </a>
+
+                        <button onclick="downloadCV()" class="px-8 py-3 border-2 border-gray-300 text-gray-900 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                            My Resume
+                        </button>
+                    </div>
+                </div>
+
+                <div class="animate-fadeIn delay-200">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
+
+                        <div class="relative h-96 rounded-2xl overflow-hidden hover:-translate-y-2.5 transition-all duration-300">
+                            <img src="IMG-20230102-WA0002.jpg"
+                                 class="w-full h-full object-cover" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- ABOUT SECTION -->
+<section id="about" class="py-12 bg-white/50">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Heading -->
+        <h2 class="font-display text-5xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            About Me
+        </h2>
+
+        <!-- About Content -->
+        <div class="max-w-3xl mx-auto text-left space-y-6">
+
+            <p class="text-lg text-gray-700 leading-relaxed">
+                I'm a passionate web developer currently pursuing a B.Sc. in Computer Science & Engineering at International Islamic University Chittagong (IIUC). I have a strong foundation in both front-end and back-end technologies and enjoy building clean, responsive, and user-friendly web applications that solve real-world problems.
+            </p>
+
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Along with web development, I also have a growing interest in UI/UX design. I enjoy creating visually appealing and intuitive user interfaces that improve user experience. I'm continuously learning modern tools, frameworks, and design principles to enhance the quality of my work.
+            </p>
+
+            <!-- Skills -->
+            <div class="pt-6 text-left">
+
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">
+                    Skills
+                </h3>
+
+                <div class="flex flex-wrap gap-3 justify-start">
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">
+                        HTML
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">
+                        CSS
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">
+                        JavaScript
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">
+                        UI/UX Design
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">
+                        Web Development
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- MODERN PROJECTS SECTION -->
+<section id="projects" class="py-16 bg-gradient-to-b from-white via-slate-50 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Featured Projects
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Showcasing my work across web development, design systems, and optimization solutions.
+            </p>
+        </div>
+
+        <div class="space-y-16">
+
+           <!-- PROJECT 1 -->
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Side -->
+                    <div class="relative h-80 md:h-full bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                        <img src="p1.jpg"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                             alt="Wholesale Management System">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Content Side -->
+                    <div class="p-10 flex flex-col justify-center">
+                        <h3 class="text-3xl font-bold mb-3 text-gray-900">
+                            Wholesale Management System
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Complete management system for products, orders, customers and sales with a clean UI and responsive design.
+                        </p>
+
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/urt123"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-fit">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Side -->
+                    <div class="relative h-80 md:h-full bg-gradient-to-br from-orange-500 to-red-500 overflow-hidden order-2 md:order-1">
+                        <img src="Frame 1618872417.png"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                             alt="Food Delivery Optimization">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Content Side -->
+                    <div class="p-10 flex flex-col justify-center order-1 md:order-2">
+                        <h3 class="text-3xl font-bold mb-3 text-gray-900">
+                            Food Delivery Optimization
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Web-based system simulating OS scheduling (FCFS/SJF) and caching algorithms (FIFO/LRU) to optimize food delivery order management.
+                        </p>
+
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Algorithms</span>
+                        </div>
+                        <a href="https://github.com/urt123/Food-Delivery-Optimization-System-"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-fit">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Side -->
+                    <div class="relative h-80 md:h-full bg-gradient-to-br from-cyan-500 to-blue-500 overflow-hidden">
+                        <img src="p3.png"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                             alt="Weather Dashboard">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Content Side -->
+                    <div class="p-10 flex flex-col justify-center">
+                        <h3 class="text-3xl font-bold mb-3 text-gray-900">
+                            Weather Dashboard
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Modern weather application with real-time data, 5-day forecast, and automatic location detection using APIs.
+                        </p>
+
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">API</span>
+                        </div>
+                        <a href="https://github.com/urt123/WeatherApp"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-fit">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Side -->
+                    <div class="relative h-80 md:h-full bg-gradient-to-br from-pink-500 to-rose-500 overflow-hidden order-2 md:order-1">
+                        <img src="p4.jpg"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                             alt="HomeFind Case Study">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Content Side -->
+                    <div class="p-10 flex flex-col justify-center order-1 md:order-2">
+                        <h3 class="text-3xl font-bold mb-3 text-gray-900">
+                            HomeFind - Rental App Case Study
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            End-to-end UI/UX case study for a home rental mobile app with user research, wireframing, prototyping and high-fidelity mockups.
+                        </p>
+
+                       <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Figma</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">User Research</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Prototyping</span>
+                        </div>
+
+                        <a href="https://www.behance.net/gallery/236787007/HomeFind-UIUX-Case-Study-on-Home-Rental-App"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-fit">
+                            View on Behance →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+ <!-- PUBLICATIONS SECTION  -->
+    <section id="publications" class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-6xl mx-auto px-6">
+ 
+            <h2 class="text-4xl lg:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Research & Publications
+            </h2>
+ 
+            <div class="space-y-8">
+ 
+                <!-- PUBLICATION 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="p-8">
+                        <!-- Header -->
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                    A Lightweight Feature Fusion and Attention-Based Network with Geometric Calibration for Robust Eye State Detection
+                                </h3>
+                                <p class="text-blue-600 font-semibold mb-2">
+                                    IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAN) 2026
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>Authors:</strong> Umme Rubaiya Tanha, Sadia Mehanaz Humaira, Sultana Akter, Zinia Sultana
+                                </p>
+                            </div>
+                            </div>
+ 
+                        <!-- Description -->
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            This paper presents a novel approach for robust eye state detection using advanced deep learning techniques. The proposed lightweight network combines feature fusion with attention mechanisms and geometric calibration for improved accuracy and efficiency.
+                        </p>
+ 
+                        <!-- Links -->
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://doi.org/10.1109/QPAIN69676.2026.11545781" 
+                               target="_blank"
+                               class="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2">
+                                📄 IEEE Xplore
+                            </a>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- PUBLICATION 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="p-8">
+                        <!-- Header -->
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                    Comparative Analysis of Machine Learning and Deep Learning Models for Stress Level Prediction
+                                </h3>
+                                <p class="text-blue-600 font-semibold mb-2">
+                                    IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAN) 2026
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>Authors:</strong> Nafisa Nawar, Jebanur Rashid Chowdhury, Umme Rubaiya Tanha, Jannatul
+Adon Joha, Sumaiya Islam, Mohammad Mahadi Hassan
+                                </p>
+                            </div>
+                            </div>
+ 
+                        <!-- Description -->
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            This research provides a comprehensive comparative analysis of various machine learning and deep learning models for predicting stress levels. The study evaluates performance metrics and identifies the most effective approaches for stress prediction applications.
+                        </p>
+ 
+                        <!-- Links -->
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://doi.org/10.1109/QPAIN69676.2026.11546013" 
+                               target="_blank"
+                               class="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2">
+                                📄 IEEE Xplore
+                            </a>
+                            </div>
+                    </div>
+                </div>
+ 
+               
+ 
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-12">
+        <div class="max-w-4xl mx-auto w-full px-6">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Get In Touch</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Info Card -->
+                <div class="opacity-0 animate-slideIn" style="animation: slideIn 0.8s ease-out forwards;">
+                    <div class="h-full bg-white rounded-2xl border border-gray-200 p-8 hover:border-blue-600 hover:shadow-xl hover:-translate-y-2.5 transition-all duration-300">
+                        <h3 class="font-display text-2xl font-bold mb-8">Contact Details</h3>
+                        
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 mb-2">Email</p>
+                            <p class="text-lg font-semibold text-gray-900">ummerubaiya667@gmail.com</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 mb-2">Phone</p>
+                            <p class="text-lg font-semibold text-gray-900">+8801944971044</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 mb-2">Location</p>
+                            <p class="text-lg font-semibold text-gray-900">Chittagong, Bangladesh</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 mb-3">Follow Me</p>
+                            <div class="flex gap-4">
+                               <a href="https://github.com/urt123" target="_blank" 
+class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.76.08-.75.08-.75 1.21.09 1.85 1.24 1.85 1.24 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0C17.99 5.16 19 5.48 19 5.48c.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
+</svg>
+
+</a>
+                                <a href="https://www.linkedin.com/in/umme-rubaiya-tanha" class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.439-.103.25-.129.599-.129.948v5.418h-3.554s.05-8.755 0-9.654h3.554v1.367c.43-.664 1.202-1.61 2.923-1.61 2.135 0 3.735 1.39 3.735 4.38v5.517zM5.337 9.433c-1.144 0-1.915-.759-1.915-1.71 0-.955.77-1.71 1.954-1.71 1.184 0 1.915.756 1.937 1.71 0 .951-.753 1.71-1.937 1.71zm1.581 11.019H3.656V9.798h3.262v10.654zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                                </a>
+                                 <a href="https://www.behance.net/umme_rubaiya_tanha" target="_blank"
+class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+
+<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Behance</title><path d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z"/></svg></svg>
+
+</a>
+
+
+</div>
+                        </div>
+
+                        <div class="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <p class="text-sm text-blue-900"><span class="font-semibold">Quick Response:</span> I usually respond to messages within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="opacity-0 animate-slideIn" style="animation: slideIn 0.8s ease-out forwards 0.2s;">
+                    <div class="h-full bg-white rounded-2xl border border-gray-200 p-8 hover:border-blue-600 hover:shadow-xl hover:-translate-y-2.5 transition-all duration-300">
+                        <h3 class="font-display text-2xl font-bold mb-8">Send Me a Message</h3>
+                        
+                        <form id="contactForm" onsubmit="sendEmail(event)">
+                            <div class="mb-6">
+                                <!-- Name Field -->
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name"
+                                    name="name" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-blue-600 focus:bg-white outline-none transition-all duration-300"
+                                    placeholder="Your name"
+                                >
+                            </div>
+                      
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-blue-600 focus:bg-white outline-none transition-all duration-300"
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+
+                            <div class="mb-8">
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5"
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-blue-600 focus:bg-white outline-none resize-none transition-all duration-300"
+                                    placeholder="Your message..."
+                                ></textarea>
+                            </div>
+
+                            <button 
+                                type="submit"
+                                class="w-full px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+
+                        <div id="formMessage" class="mt-4 text-sm text-center text-gray-600"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    function downloadCV() {
+        window.open('CV_Tanha.pdf');
+    }
+
+    (function () {
+        emailjs.init("33wG18NCKVpzBTdAU");
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault();
+
+        const params = {
+            name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+        };
+
+        emailjs.send("service_dubjstb", "template_2c3q7u8", params)
+            .then(() => {
+                document.getElementById("formMessage").innerHTML =
+                    "<span style='color:green'>Message sent successfully!</span>";
+
+                document.getElementById("contactForm").reset();
+            })
+            .catch((error) => {
+                console.log(error);
+                document.getElementById("formMessage").innerHTML =
+                    "<span style='color:red'>Failed to send message!</span>";
+            });
+    }
+
+    // Update active nav link based on scroll position
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('section');
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('text-blue-600');
+            link.classList.add('text-gray-700');
+        });
+
+        if (current) {
+            const activeLink = document.querySelector(`nav a[href="#${current}"]`);
+            if (activeLink) {
+                activeLink.classList.remove('text-gray-700');
+                activeLink.classList.add('text-blue-600');
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
